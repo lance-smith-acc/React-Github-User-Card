@@ -42,6 +42,7 @@ class App extends Component {
             <p>{this.state.gitInfoPrime.bio}</p>
         </div>
         <div>
+          <h1>Followers</h1>
           {this.state.gitInfoFollow.map(i => (
             <Card name={i.login} avatar_url={i.avatar_url}/>
           ))}
